@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: "Karla", sans-serif;
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+  color: #fff;
+}
+
+main {
+  padding: 2.25rem;
+  text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+}
+
+form,
+input,
+button {
+  font-family: inherit;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 1.25rem;
+  background: linear-gradient(90deg, #672280 1.18%, #a626d3 100%);
+}
+.header--img {
+  height: 1.65rem;
+}
+.header--title {
+  font-size: 1.25rem;
+  margin-right: auto;
+}
+
+.header--project {
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.form {
+  display: grid;
+  gap: 1rem;
+  grid-template: 2.5rem 2.5rem / 1fr 1fr;
+}
+.form--input {
+  border: 1px solid #d5d4d8;
+  border-radius: 5px;
+  text-indent: 0.75rem;
+}
+.form--input:focus {
+  outline: 3px solid #bed3fd;
+}
+.form--button {
+  grid-column: 1 / -1;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  background: linear-gradient(90deg, #672280 1.18%, #a626d3 100%);
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  cursor: pointer;
+}
+.form--button:focus {
+  outline: 3px solid #bed3fd;
+}
+.meme {
+  position: relative;
+}
+.meme--img {
+  margin-top: 1rem;
+  max-width: 100%;
+  border-radius: 5px;
+}
+.meme--text {
+  position: absolute;
+  width: 80%;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 15px 0;
+  padding: 0 5px;
+  font-family: impact, sans-serif;
+  font-size: 2em;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 1px;
+  text-shadow:
+      2px 2px 0 #000,
+      -2px -2px 0 #000,
+      2px -2px 0 #000,
+      -2px 2px 0 #000,
+      0 2px 0 #000,
+      2px 0 0 #000,
+      0 -2px 0 #000,
+      -2px 0 0 #000,
+      2px 2px 5px #000;
+}
+
+.bottom {
+  bottom: 0;
+}
+
+.top {
+  top: .75rem;
+}
